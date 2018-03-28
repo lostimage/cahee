@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,700,800');
+body{
+	font:300 17px/1.588 'Raleway', sans-serif;
+	color:  #262626;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	line-height: 1;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width: 1200px;
+}
+.ba-row > [class*="ba-col-"] {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+	line-height: 55px;
+}
+.ba-button--get-free {
+	margin-top: 15px;
+	background-color:  #ff6033;
+
+}
+.ba-button--get-free:hover {
+	background-color: #F62508;
+}
+.ba-button--view-more {
+
+	background-color:  #5585A2;
+	width: 16.66667%;
+}
+.ba-button--view-more:hover {
+	background-color: #282D40;
+}
+.ba-button--subscribe{
+	background-color:  #96B92C;
+	border:0;
+	width: 100%;
+	outline: 0;
+}
+.ba-button--subscribe:hover {
+	background-color: #304B06;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+.ba-subscribe--email {
+	width: 100%;
+	font-size: 15px;
+	line-height: 55px;
+	padding-left:15px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+.ba-fresh {
+	background: #fff url('../img/freshbg.jpg') no-repeat 50% 12%;
+	min-height: 100vh;
+	padding:50px 0 100px;
+	position: relative;
+}
+.ba-header {
+	display: flex;
+	padding-bottom: 50px;
+}
+.ba-logo {
+	font:400 50px/1 'Pacifico', cursive;
+	flex-grow: 1;
+}
+.ba-nav {
+	display: flex;
+	margin-left: -40px;
+	margin-top: 5px;
+}
+.ba-list {
+	display: block;
+	padding-left: 37px;
+	line-height: 40px;
+	position: relative;
+	}
+.ba-nav__ref {
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 40px;
+	text-transform: uppercase;
+	color:  #262626;
+
+}
+
+.ba-list:before{
+    display: block;
+    background-color: #ff6033;
+    position: absolute;
+    content: "";
+    left: 37px;
+    right: 0;
+    top: 3px;
+    height: 3px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: transform .2s ease-in, opacity .2s ease-in;
+}
+.ba-list:hover:before {
+	opacity: 1;
+	transform: translateY(0);
+}
+.ba-list--active:before {
+	opacity: 1;
+	transform: translateY(0);
+}
+.ba-fresh__info {
+	 padding:192px 0;
+}
+.ba-fresh__title {
+	font-weight: 800;
+	font-size: 60px;
+	line-height: 1;
+}
+.ba-scroll {
+	position: absolute;
+	bottom: 70px;
+	left: 50%;
+	width: 24px;
+	margin-left: -12px;
+	height: 40px;
+	background: url(../img/scroll.png) no-repeat 50%;
+	transition: transform .3s ease-in, opacity .3s ease-in;
+}
+.ba-scroll:hover {
+	transform: translateY(-10px);
+
+}
+.ba-about {
+	padding:33px 0 14px;
+	color: #fff;
+	background: radial-gradient(circle farthest-side at 50%,
+	 rgba(0, 196, 196, 0.9) 0%,
+	 rgba(0, 183, 183, 0.9) 31%,
+	  rgba(0, 173, 173, 0.9) 67%,
+	  rgba(0, 156, 156, 0.9) 100%);
+}
+.ba-about__image {
+	margin-left: -47px;
+}
+.ba-row > [class*="ba-col-7--raspberry"] {
+	margin-right: -15px;
+}
+.ba-row > [class*="ba-about__info"] {
+	padding:134px 0 0 0 ;
+}
+.ba-about__title {
+	font-size: 90px;
+	font-weight: 700;
+	line-height: 1;
+}
+.ba-services {
+	background-color: #70BFFF;
+	padding: 90px 0 150px;
+}
+.ba-services__list {
+	padding:89px 0 0 104px;
+	margin: 0;
+}
+.ba-services__item {
+	display: flex;
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+	text-align: center;
+	align-items: center;
+	background-color: #fff;
+	max-width: 400px;
+
+}
+.ba-services__item+.ba-services__item {
+	margin-top: 20px;
+}
+.ba-services__subtitle {
+	flex-basis: 300px;
+	background-color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+
+}
+.ba-services__icon {
+	width: 100px;
+	height: 100px;
+	border-left: 1px solid #9D9D9D;
+}
+.ba-services__icon--shop {
+	background: #fff url('../img/shop.svg') no-repeat 50%;
+}
+.ba-services__icon--product {
+	background: #fff url('../img/product.svg') no-repeat 50%;
+}
+.ba-services__icon--delivery {
+	background: #fff url('../img/delivery.svg') no-repeat 50%;
+}
+.ba-services__icon--organized {
+	background: #fff url('../img/organized.svg') no-repeat 50%;
+}
+.ba-row > [class*="ba-services__tomato"] {
+	background: url('../img/tomato.png') no-repeat 89%;
+	padding: 230px 0 220px 44px;
+}
+.ba-services__title {
+	line-height: 1;
+	font-size: 90px;
+	font-weight: 700;
+	color: #fff;
+}
+.ba-gallery {
+	background-color: #FCE72A;
+	padding:90px 0 120px;
+}
+.ba-gallery__title {
+	font-size: 90px;
+	font-weight: 700;
+	text-align: center;
+}
+.ba-col-6--middle {
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 42px;
+}
+.ba-col-6--middle p {
+	margin: 0;
+}
+.ba-gallery__image {
+
+	overflow: hidden;
+	display: block;
+	position: relative;
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5)
+}
+.ba-gallery__image img {
+	width: 100%;
+	display: block;
+}
+.ba-row {
+	margin-left:-15px;
+	margin-right: -15px;
+}
+
+.ba-description {
+	background-color: rgba(0, 196, 196, 0.7);
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	opacity: 0;
+}
+.ba-description:hover {
+	opacity: 1;
+}
+.ba-view-more {
+	text-align: center;
+	margin-top:45px;
+}
+.ba-subcscribe {
+	background: #fff url('../img/bgbluberry.png') no-repeat 50%;
+	padding:145px 0 150px;
+}
+.ba-subcscribe__form {
+	margin-top: 13px;
+}
+.ba-subcscribe__title {
+	font-size: 40px;
+	font-weight: 700;
+}
